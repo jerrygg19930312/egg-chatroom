@@ -1,0 +1,32 @@
+{
+  "name": "egg-chatroom",
+  "version": "1.0.0",
+  "description": "用egg.js构建聊天室应用",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerrygg19930312/egg-chatroom.git"
+  },
+  "keywords": [
+    "Node.js",
+    "egg.js",
+    "egg-socket.io.js"
+  ],
+  "author": "jerrygg19930312",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jerrygg19930312/egg-chatroom/issues"
+  },
+  "homepage": "https://github.com/jerrygg19930312/egg-chatroom#readme",
+  "dependencies": {
+    "egg": "^1.1.0",
+    "egg-socket.io": "^1.2.0",
+    "egg-view-nunjucks": "^2.0.0"
+  },
+  "devDependencies": {
+    "egg-bin": "^3.3.0"
+  }
+}
