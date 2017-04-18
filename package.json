@@ -4,7 +4,14 @@
   "description": "用egg.js构建聊天室应用",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "egg-bin dev",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
   },
   "repository": {
     "type": "git",
@@ -15,6 +22,9 @@
     "egg.js",
     "egg-socket.io.js"
   ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "author": "jerrygg19930312",
   "license": "MIT",
   "bugs": {
@@ -26,7 +36,17 @@
     "egg-socket.io": "^1.2.0",
     "egg-view-nunjucks": "^2.0.0"
   },
+  "ci": {
+    "version": "6"
+  },
   "devDependencies": {
-    "egg-bin": "^3.3.0"
+    "autod": "^2.7.1",
+    "egg-bin": "^3.1.0",
+    "egg-ci": "^1.5.0",
+    "egg-mock": "^3.2.0",
+    "eslint": "^3.18.0",
+    "eslint-config-egg": "^3.2.0",
+    "supertest": "^3.0.0",
+    "webstorm-disable-index": "^1.1.2"
   }
 }
